@@ -1,133 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Paused | Contact Company</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-      background: linear-gradient(145deg, #0f172a 0%, #111827 100%);
-      font-family: system-ui, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1.5rem;
-    }
+    <!-- ============ PRIMARY SEO META TAGS ============ -->
+    <title>ADB Construction Co. Ltd | Building Excellence, Paused for Maintenance</title>
+    <meta name="description" content="ADB Construction Co. Ltd is a professional construction company specializing in commercial, residential, and infrastructure projects. Our website is temporarily paused. For inquiries, please contact us directly.">
+    <meta name="keywords" content="ADB Construction, ADB Construction Co. Ltd, construction company, building contractors, commercial construction, residential construction, infrastructure, civil engineering, construction services, adbconstructioncoltd.com">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="author" content="ADB Construction Co. Ltd">
 
-    .container {
-      max-width: 600px;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border-radius: 2.5rem;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.4);
-      padding: 2.5rem 2rem;
-      text-align: center;
-    }
+    <!-- ============ CANONICAL URL ============ -->
+    <link rel="canonical" href="https://www.adbconstructioncoltd.com/">
 
-    .pause-icon {
-      font-size: 5rem;
-      background: rgba(255, 255, 255, 0.08);
-      width: 100px;
-      height: 100px;
-      border-radius: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1.5rem auto;
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(255, 200, 100, 0.4);
-    }
+    <!-- ============ OPEN GRAPH (Facebook, LinkedIn, etc.) ============ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ADB Construction Co. Ltd">
+    <meta property="og:title" content="ADB Construction Co. Ltd | Building Excellence">
+    <meta property="og:description" content="ADB Construction Co. Ltd — a trusted name in commercial, residential, and infrastructure construction. Our website is temporarily paused. Please reach out directly for any inquiries.">
+    <meta property="og:url" content="https://www.adbconstructioncoltd.com/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://www.adbconstructioncoltd.com/og-image.jpg">
+    <meta property="og:image:alt" content="ADB Construction Co. Ltd logo and branding">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-    h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      color: #f0f3fa;
-      letter-spacing: -0.3px;
-      margin-bottom: 1rem;
-    }
+    <!-- ============ TWITTER CARD ============ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ADB Construction Co. Ltd | Building Excellence">
+    <meta name="twitter:description" content="ADB Construction Co. Ltd — professional construction services. Website temporarily paused. Contact us directly for inquiries.">
+    <meta name="twitter:image" content="https://www.adbconstructioncoltd.com/og-image.jpg">
+    <meta name="twitter:image:alt" content="ADB Construction Co. Ltd branding">
 
-    .inactive-message {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 1rem 1.2rem;
-      border-radius: 1.5rem;
-      font-size: 1rem;
-      color: #cddcff;
-      margin: 1.5rem 0;
-      border-left: 3px solid #ffb347;
-      text-align: left;
-    }
+    <!-- ============ ADDITIONAL META ============ -->
+    <meta name="theme-color" content="#0f172a">
+    <meta name="msapplication-TileColor" content="#ffb347">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23ffb347'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui, sans-serif' font-size='42' font-weight='700' fill='%230f172a'>ADB</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23ffb347'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='system-ui, sans-serif' font-size='42' font-weight='700' fill='%230f172a'>ADB</text></svg>">
 
-    .inquiry-section {
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 1.5rem;
-      padding: 1.2rem;
-      margin: 1.8rem 0;
-    }
+    <!-- ============ STRUCTURED DATA: JSON-LD Organization Schema ============ -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "ADB Construction Co. Ltd",
+            "alternateName": "ADB Construction",
+            "url": "https://www.adbconstructioncoltd.com/",
+            "description": "ADB Construction Co. Ltd is a professional construction company delivering high-quality commercial, residential, and infrastructure projects. Built on integrity, precision, and decades of industry expertise.",
+            "foundingDate": "2005",
+            "areaServed": {
+                "@type": "Country",
+                "name": "United Kingdom"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "availableLanguage": ["English"]
+            },
+            "sameAs": [],
+            "knowsAbout": [
+                "Commercial Construction",
+                "Residential Construction",
+                "Infrastructure Development",
+                "Civil Engineering",
+                "Project Management",
+                "Building Contractors",
+                "Renovation & Refurbishment",
+                "Structural Engineering"
+            ],
+            "slogan": "Building Excellence, Every Day.",
+            "brand": {
+                "@type": "Brand",
+                "name": "ADB Construction",
+                "url": "https://www.adbconstructioncoltd.com/"
+            }
+        }
+    </script>
 
-    .inquiry-label {
-      font-size: 0.9rem;
-      font-weight: 600;
-      letter-spacing: 1px;
-      color: #ffdfb0;
-      margin-bottom: 0.5rem;
-    }
+    <!-- ============ ADDITIONAL STRUCTURED DATA: WebSite Schema ============ -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "ADB Construction Co. Ltd",
+            "url": "https://www.adbconstructioncoltd.com/",
+            "description": "Official website of ADB Construction Co. Ltd — professional construction services. Site temporarily paused.",
+            "inLanguage": "en",
+            "publisher": {
+                "@type": "Organization",
+                "name": "ADB Construction Co. Ltd"
+            }
+        }
+    </script>
 
-    .inquiry-text {
-      font-size: 1rem;
-      color: #bdd4ff;
-    }
+    <style>
+        /* ============ CSS RESET & BASE ============ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    hr {
-      margin: 1.2rem 0;
-      border: none;
-      height: 1px;
-      background: linear-gradient(to right, transparent, rgba(255,255,255,0.2), transparent);
-    }
+        :root {
+            --bg-deep: #0b1320;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --border-subtle: rgba(255, 255, 255, 0.10);
+            --border-accent: rgba(255, 179, 71, 0.45);
+            --text-primary: #eef2fc;
+            --text-secondary: #c4d1f0;
+            --text-muted: #7b8db0;
+            --accent-gold: #ffb347;
+            --accent-gold-soft: #ffdfb0;
+            --accent-blue-soft: #bdd4ff;
+            --radius-lg: 2.5rem;
+            --radius-md: 1.5rem;
+            --radius-sm: 1rem;
+            --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
 
-    .footer-note {
-      font-size: 0.75rem;
-      color: #7b8bb0;
-    }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
 
-    @media (max-width: 500px) {
-      .container {
-        padding: 1.8rem;
-      }
-      h1 {
-        font-size: 1.7rem;
-      }
-      .pause-icon {
-        width: 70px;
-        height: 70px;
-        font-size: 3.5rem;
-      }
-    }
-  </style>
+        body {
+            background: linear-gradient(155deg, #0b1320 0%, #0f172a 30%, #111827 70%, #0d1525 100%);
+            font-family: var(--font-sans);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ============ SUBTLE BACKGROUND PATTERN ============ */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image:
+                radial-gradient(ellipse at 20% 20%, rgba(255, 179, 71, 0.03) 0%, transparent 55%),
+                radial-gradient(ellipse at 75% 70%, rgba(100, 160, 255, 0.04) 0%, transparent 55%),
+                radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.015) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* ============ MAIN CONTAINER ============ */
+        .page-container {
+            position: relative;
+            z-index: 1;
+            max-width: 640px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-subtle);
+            box-shadow:
+                0 30px 60px -20px rgba(0, 0, 0, 0.55),
+                0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+                0 1px 0 rgba(255, 255, 255, 0.03) inset;
+            padding: 3rem 2.25rem;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* ============ LOGO / ICON AREA ============ */
+        .brand-mark {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.8rem auto;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: rgba(255, 179, 71, 0.08);
+            border: 2px solid var(--border-accent);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            position: relative;
+            box-shadow: 0 0 50px rgba(255, 179, 71, 0.10);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .brand-mark:hover {
+            transform: scale(1.04);
+            box-shadow: 0 0 70px rgba(255, 179, 71, 0.20);
+        }
+
+        .brand-mark-inner {
+            font-size: 3.6rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: var(--accent-gold);
+            text-shadow: 0 2px 20px rgba(255, 179, 71, 0.5);
+            user-select: none;
+            line-height: 1;
+        }
+
+        /* ============ HEADINGS ============ */
+        h1 {
+            font-size: 2.3rem;
+            font-weight: 750;
+            color: #f4f7fe;
+            letter-spacing: -0.4px;
+            margin-bottom: 0.6rem;
+            line-height: 1.25;
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 1.6rem;
+            letter-spacing: 0.2px;
+        }
+
+        .tagline strong {
+            color: var(--accent-gold-soft);
+            font-weight: 650;
+        }
+
+        /* ============ PAUSED STATUS BANNER ============ */
+        .status-banner {
+            background: rgba(0, 0, 0, 0.45);
+            padding: 1.15rem 1.4rem;
+            border-radius: var(--radius-md);
+            font-size: 0.98rem;
+            color: #cddcff;
+            margin: 1.8rem 0;
+            border-left: 4px solid var(--accent-gold);
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            line-height: 1.55;
+        }
+
+        .status-banner .icon-pause {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* ============ INQUIRY SECTION ============ */
+        .inquiry-card {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: var(--radius-md);
+            padding: 1.4rem 1.5rem;
+            margin: 1.8rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        .inquiry-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+            color: var(--accent-gold-soft);
+            margin-bottom: 0.55rem;
+        }
+
+        .inquiry-text {
+            font-size: 1.05rem;
+            color: var(--accent-blue-soft);
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+
+        .company-name-highlight {
+            display: inline-block;
+            font-weight: 750;
+            color: #ffffff;
+            background: rgba(255, 179, 71, 0.15);
+            padding: 0.15rem 0.7rem;
+            border-radius: 0.5rem;
+            letter-spacing: 0.3px;
+            border: 1px solid rgba(255, 179, 71, 0.25);
+        }
+
+        /* ============ DIVIDER ============ */
+        hr {
+            margin: 1.4rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right,
+                    transparent 0%,
+                    rgba(255, 255, 255, 0.18) 20%,
+                    rgba(255, 255, 255, 0.18) 80%,
+                    transparent 100%);
+        }
+
+        /* ============ SERVICES TAGS (SEO-RICH CONTENT) ============ */
+        .services-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+            justify-content: center;
+            margin: 1.2rem 0 0.8rem;
+        }
+
+        .service-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 550;
+            color: #d0ddfa;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            padding: 0.35rem 0.85rem;
+            border-radius: 2rem;
+            letter-spacing: 0.3px;
+            transition: background 0.25s, border-color 0.25s;
+        }
+
+        .service-tag:hover {
+            background: rgba(255, 179, 71, 0.10);
+            border-color: rgba(255, 179, 71, 0.35);
+            color: #ffe4c0;
+        }
+
+        /* ============ FOOTER NOTE ============ */
+        .footer-note {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            letter-spacing: 0.2px;
+        }
+
+        .footer-domain {
+            font-weight: 600;
+            color: #a0b5dd;
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 600px) {
+            .page-container {
+                padding: 2rem 1.4rem;
+                border-radius: 2rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .brand-mark {
+                width: 85px;
+                height: 85px;
+            }
+
+            .brand-mark-inner {
+                font-size: 2.6rem;
+            }
+
+            .tagline {
+                font-size: 0.95rem;
+            }
+
+            .status-banner {
+                font-size: 0.9rem;
+                padding: 1rem 1.1rem;
+            }
+
+            .inquiry-card {
+                padding: 1.1rem 1.2rem;
+            }
+        }
+
+        @media (max-width: 380px) {
+            h1 {
+                font-size: 1.45rem;
+            }
+
+            .brand-mark {
+                width: 70px;
+                height: 70px;
+            }
+
+            .brand-mark-inner {
+                font-size: 2rem;
+            }
+
+            .page-container {
+                padding: 1.6rem 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <div class="pause-icon">⏸️</div>
-  <h1>This website is paused</h1>
-  <div class="inactive-message">
-    The service is currently inactive. No interactive features are available at this time.
-  </div>
-  <div class="inquiry-section">
-    <div class="inquiry-label">📬 FOR ANY INQUIRIES</div>
-    <div class="inquiry-text">Please contact the company directly:</div>
-  </div>
-  <hr>
-  <div class="footer-note">
-    Thank you for your understanding.
-  </div>
-</div>
+
+    <!-- ============ MAIN PAGE CONTAINER ============ -->
+    <main class="page-container" role="main" aria-labelledby="page-heading">
+
+        <!-- Brand Mark -->
+        <div class="brand-mark" aria-hidden="true">
+            <span class="brand-mark-inner">ADB</span>
+        </div>
+
+        <!-- Primary Heading (H1 for SEO) -->
+        <h1 id="page-heading">ADB Construction Co. Ltd</h1>
+        <p class="tagline">
+            <strong>Building Excellence</strong> — Commercial &bull; Residential &bull; Infrastructure
+        </p>
+
+        <!-- Paused Status Banner -->
+        <div class="status-banner">
+            <span class="icon-pause" aria-hidden="true">⏸️</span>
+            <span>
+                <strong>Our website is currently paused.</strong><br>
+                The full online experience is temporarily inactive. No interactive features or project galleries are available at this time. We appreciate your patience and look forward to showcasing our work soon.
+            </span>
+        </div>
+
+        <!-- Inquiry Section -->
+        <section class="inquiry-card" aria-label="Contact inquiry information">
+            <div class="inquiry-label">&#128231; For Any Inquiries</div>
+            <p class="inquiry-text">
+                Please contact <span class="company-name-highlight">ADB Construction Co. Ltd</span> directly.
+            </p>
+            <p style="font-size:0.9rem;color:#9aafd4;margin-top:0.4rem;">
+                Our team is available to discuss your construction needs, project consultations, and partnership opportunities.
+            </p>
+        </section>
+
+        <!-- Divider -->
+        <hr aria-hidden="true">
+
+        <!-- SEO-Rich Service Keywords (helps Google understand the business) -->
+        <div class="services-row" aria-label="Our construction services">
+            <span class="service-tag">Commercial Construction</span>
+            <span class="service-tag">Residential Building</span>
+            <span class="service-tag">Infrastructure</span>
+            <span class="service-tag">Civil Engineering</span>
+            <span class="service-tag">Project Management</span>
+            <span class="service-tag">Renovation</span>
+            <span class="service-tag">Structural Work</span>
+            <span class="service-tag">Design &amp; Build</span>
+            <span class="service-tag">General Contracting</span>
+            <span class="service-tag">Refurbishment</span>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer-note">
+            Thank you for your understanding. &nbsp;&mdash;&nbsp;
+            <span class="footer-domain">adbconstructioncoltd.com</span>
+        </footer>
+
+    </main>
+
 </body>
 </html>
